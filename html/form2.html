@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_containt {
+            /* border: 3px solid black;  */
+            width: 40%;
+            margin: 0 auto;
+            background-color: rgb(128, 132, 132);
+            padding: 10px;
+        }
+
+        .border {
+            border: 2px solid white;
+            border-radius: 06px;
+            width: 90%;
+            margin: 5px 10px;
+            padding: 10px 10px;
+            background-color: rgb(205, 206, 206);
+        }
+
+        .border1 {
+            display: flex;
+            border: 2px solid white;
+            border-radius: 06px;
+            width: 92%;
+            margin: 2px 10px;
+            padding: 05px 04px;
+            background-color: rgb(205, 206, 206);
+        }
+
+        .border2 {
+            border: 2px solid white;
+            border-radius: 06px;
+            width: 93%;
+             margin:2px 13px; 
+              padding: 0px 02px; 
+              background-color: rgb(205, 206, 206);
+        }
+
+        input#name {
+            margin-left: 119px;
+        }
+
+        input#email {
+            margin-left: 25%;
+        }
+
+        input#phone {
+            margin-left: 25%;
+        }
+
+        input#postcode {
+            margin-left: 22%;
+        }
+     input#country {
+            margin-left: 23%;
+        }
+
+        input#number {
+            margin-left: 20%;
+        }
+
+        input#code {
+            margin-left: 20%;
+        }
+
+        input#name1 {
+            margin-left: 98px;
+        }
+
+        .detail {
+            margin: 10px 0px 10px 10px;
+        }
+
+        textarea#address {
+            margin-left: 45%;
+        }
+
+        .card{
+            display: flex;
+        }
+        
+        .input{
+            background-color: transparent;
+            width: 50%;
+             margin-left: 50px;
+            font-size: 16px;
+            padding: 10px 12px; 
+        }
+        .card input{
+            text-align: center;
+            font-size: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_containt">
+        <form>
+            <div>
+                <h2 class="detail">step 1: your details</h2>
+            </div>
+            <div class="border">
+                <label for="name">Name</label>
+                <input class="input" type="text" id="name" name="name" value="Name" placeholder="First and last name">
+            </div>
+            <div class="border">
+                <label for="email">Email</label>
+                <input class="input" type="email" id="email" name="email" value="Email" placeholder="examole@domain.com">
+            </div>
+            <div class="border">
+                <label for="phone">Phone</label>
+                <input class="input" type="tel" id="phone" name="phone" value="Phone" placeholder="Eg. +447500000000">
+            </div>
+            <div>
+                <h2 class="detail">Step 2:Delivery address</h2>
+            </div>
+            <div class="border1">
+                <div>
+                    <p for="address">Address:</p>
+                </div>
+                <div>
+                    <textarea class="input" name="message" id="address" rows="4" style="width: 250px;"></textarea>
+                </div>
+            </div>
+            <div class="border">
+                <label for="postcode">Post code</label>
+                <input class="input" type="number" id="postcode" name="number" value="Post code">
+            </div>
+            <div class="border">
+                <label for="country">Country</label>
+                <input class="input" type="text" id="country" name="country" value="Country">
+            </div>
+            <div>
+                <h2 class="detail">Step 3: Card details</h2>
+            </div>
+            <div class="border2">
+                <label>Card choose:</lable>
+                <div class="card">
+                    <form>
+                        
+                        <input type="radio" id="visa" name="visa"><img style="margin-top: 6px;" src="/VISA-logo.png" alt="" height="10px" width="35px"> visa
+                        <input type="radio" id="AmEx" name="AmEx" style="margin: 10px 40px;"><img style="margin-top: 6px;" src="/AmEx.webp" alt="" height="10px" width="35px">  AmEx
+                        <input type="radio" id="Master" name="Master" style="margin: 10px 40px;"><img style="margin-top: 6px;" src="/Master.png" alt="" height="10px" width="35px"> Master
+
+                    </form>
+                </div>
+            </div>
+            <div class="border">
+                <label for="number">Card number</label>
+                <input class="input" type="tel" id="number" name="number" value="Card number" maxlength="14">
+            </div>
+            <div class="border">
+                <label for="code">Security code</label>
+                <input class="input" type="tel" id="code" name="number" value="Security code">
+            </div>
+            <div class="border">
+                <label for="name">Name on card</label>
+                <input class="input" type="text" id="name1" name="name" value="Name on card" placeholder="Exact name as on the card">
+            </div>
+            <div style="text-align: center; margin:15px 0px;">
+                <button type="button">BUY IT!</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

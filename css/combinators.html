@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m p{
+            background-color: aqua;
+        }
+        .m1 > p{
+            background-color: rgb(178, 237, 237);
+        }
+        .m2 + p{
+          background-color: blueviolet;
+        }
+        .m3 ~ p{
+          background-color: brown;
+        }
+        a:link{
+          color: rgb(255, 247, 0);
+        }
+        /* a:visited{ */
+          /* color: green; */
+        /* } */
+        a:hover{
+          color: rgb(255, 7, 7);
+        }
+        a:active{
+          color: rgb(255, 255, 255);
+        }
+        p.element::first-line{
+          color: cadetblue;
+          font-variant: small-caps;
+          text-transform: capitalize;
+        }
+        p.element::first-letter{
+          color: chartreuse;
+          font-size: xx-large;
+        }
+         h1::before{
+          content: url(https://www.w3schools.com/css/smiley.gif);
+        } 
+        .after::after{
+          content: url(https://www.w3schools.com/css/smiley.gif);
+        }
+        ::marker{
+          color: crimson;
+          font-size: x-large;
+        }
+        h3::selection{
+          color: cadetblue;
+          background-color: darkcyan;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Descendant Selector</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+    <div class="m">
+        <p>goyani</p>
+        <p>mahi</p>
+        <section><p>maheshbhai</p></section>
+    </div>
+    <p>ruhi patel</p><hr>
+    <h2>Child Selector</h2>
+
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+<div class="m1">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
+</div>
+<p>hello world</p><hr>
+<h2>Adjacent Sibling Selector</h2>
+
+<p>The + selector is used to select an element that is directly after another specific element.</p>
+<p>The following example selects the first p element that are placed immediately after div elements:</p>
+
+<div class="m2">
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+</div>
+
+<p>Paragraph 3. After a div.</p>
+<p>Paragraph 4. After a div.</p>
+
+<div class="m2
+">
+  <p>Paragraph 5 in the div.</p>
+  <p>Paragraph 6 in the div.</p>
+</div>
+
+<p>Paragraph 7. After a div.</p>
+<p>Paragraph 8. After a div.</p><hr>
+<h2>genral sibling selector</h2>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, earum. Iste harum hic consequuntur eaque molestiae voluptatum blanditiis itaque perspiciatis.</p>
+<p>mahi</p>
+<div class="m3">
+  <p>ruhi</p>
+  <p>patel</p>
+</div>
+<h1>mahi</h1>
+<p>goyani</p><hr>
+<h2>Styling a link depending on state</h2>
+<p><b>Note:</b> a:hover MUST come after a:link and a:visited in the CSS definition in order to be effective.</p>
+<p><b>Note:</b> a:active MUST come after a:hover in the CSS definition in order to be effective.</p>
+<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">this is a link</a><hr>
+<div >
+  <h1 class="after">pusedo-element</h1>
+  <p class="element">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, repudiandae! Excepturi sapiente molestiae dicta facere? Id consequuntur optio, itaque vero numquam dicta fugit mollitia, unde est corporis dolore impedit odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, asperiores!</p>
+</div>
+<div>
+  <ul>
+    <li>tea</li>
+    <li>cofee</li>
+    <li>drinks</li>
+    <li>water</li>
+  </ul>
+  <ol>
+    <li>flower</li>
+    <li>vegetables</li>
+    <li>fruits</li>
+  </ol>
+  <h3>web devloper</h3>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(143, 193, 194);
+            transition: width 3s height 3s transform 3s;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+           
+        }
+        .div1:hover{
+            width: 300px;
+            height: 200px;
+            transform: scale(2 2);
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(27, 175, 177);
+            transition: width 3s height 3s transform 3s;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+
+        }
+        .div2:hover{
+            width: 300px;
+            height: 200px;
+            transform: rotate(360deg);
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(122, 234, 236);
+            transition: width 3s height 3s transform 3s;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+        }
+        .div3:hover{
+            width: 300px;
+            height: 200px;
+            transform: skew(360deg);
+        }
+        .div4{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(179, 216, 216);
+            transition: width 3s height 3s transform 3s;
+            transition-duration: 4s;
+            transition-timing-function: linear;
+        }
+        .div4:hover{
+            width: 300px;
+            height: 200px;
+            transform: matrix(1, -0.3, 0, 1, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">scale</div>
+    <div class="div2">rotate</div>
+    <div class="div3">skew</div>
+    <div class="div4">matrix</div>
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .containt {
+            position: relative;
+            display: inline-block;
+            /* margin: 0; */
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .first {
+            padding-bottom: 30px;
+        }
+
+        .hover-containt {
+            position: absolute;
+            display: none;
+            background-color: aliceblue;
+            width: 100px;
+            padding: 5px 10px;
+            text-align: center;
+            border: 1px solid black;
+            box-shadow: 2px 2px 4px black;
+        }
+
+        .containt:hover .hover-containt {
+            display: block;
+        }
+
+        .containt {
+            position: relative;
+            display: inline-block;
+        }
+
+        .button {
+            background-color: cornflowerblue;
+            color: rgb(172, 198, 246);
+            padding: 10px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .containt-dropdown {
+            display: none;
+            position: absolute;
+            background-color: bisque;
+            width: 137px;
+            box-shadow: 2px 2px 2px 2px black;
+            z-index: 1;
+            text-align: center;
+        }
+        .containt-dropdown a{
+            color: black;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        .containt-dropdown a:hover{background-color: rgb(189, 187, 187);}
+        .containt:hover .containt-dropdown{
+            display: block;
+        }
+        .containt:hover .button{
+            background-color: rgb(93, 87, 87);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Hoverable Dropdown</h2>
+        <p class="first">Move the mouse over the text below to open the dropdown content.</p>
+        <div class="containt">
+            <p>mouse over me</p>
+            <div class="hover-containt">
+                <p>hello good morning! </p>
+            </div>
+
+        </div>
+    </div><br><br><br><hr>
+    <div>
+        <h2>Dropdown Menu</h2>
+        <p>Move the mouse over the button to open the dropdown menu.</p>
+        <div class="containt">
+            <button class="button">DROPDOWN</button>
+            <div class="containt-dropdown">
+                <a href="#">Link1</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

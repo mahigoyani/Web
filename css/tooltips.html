@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltips {
+            position: relative;
+            display: inline-block;
+            border-bottom: 2px dotted black;
+            width: 100px;
+        }
+        .tooltips:hover .tooltipstext {
+            visibility: visible;
+        }
+        .tooltips .tooltipstext {
+            position: absolute;
+            visibility: hidden;
+             background-color: black; 
+            color: black;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px 5px;
+            left: 110px;
+            background: linear-gradient(to bottom, grey 0%, #fff 100%);
+            height: 30PX;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body style="text-align: center;">
+    <h1>who is bakri?</h1>
+    <p>Move the mouse over the text below:</p>
+    <p class="tooltips">hover over me <span class="tooltipstext">bakri=ronak</span></p>
+</body>
+
+</html>

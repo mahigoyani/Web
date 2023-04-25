@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1 {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: cartoon;
+            animation-duration: 5s;
+             animation-iteration-count: infinite; 
+        }
+
+        @keyframes cartoon {
+            0% {
+                left: 0;
+                top: 0;
+            }
+
+            25% {
+                left: 150px;
+                top: 0;
+            }
+
+            50% {
+                left: 150px;
+                top: 150px;
+            }
+
+            75% {
+                left: 0;
+                top: 150px;
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .img2 {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: cartoon1;
+            animation-duration: 5s;
+             animation-iteration-count: infinite; 
+
+        }
+
+        @keyframes cartoon1 {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 200px;
+            }
+        }
+
+        .img3 {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: cartoon2;
+            animation-duration: 5s;
+             animation-iteration-count: infinite; 
+        }
+
+        @keyframes cartoon2 {
+            0% {
+                left: 200px;
+            }
+
+            100% {
+                left: 0;
+            }
+        }
+
+        .img4 {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: cartoon3;
+            animation-duration: 5s;
+             animation-iteration-count: infinite; 
+        }
+
+        @keyframes cartoon3 {
+            0% {
+                top: 0;
+            }
+
+            100% {
+                top: 200px;
+            }
+        }
+        .img5 {
+            margin-top:200px ;
+            margin-left: 200px;
+            height: 100px; 
+             width: 600px;
+            /* position: relative; */
+            animation: rotation 5s linear infinite;
+        }
+        @keyframes rotation{
+            100%{transform: rotate(360deg);}
+        }
+    
+    </style>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <img class="img1" src="doll.jpg" alt="">
+        </div>
+        <div style="width: 50%;">
+            <img class="img2" src="doll.jpg" alt="">
+        </div>
+       
+       
+    </div>
+    <div style="display: flex;">
+        <div style="margin-top: 150px; width: 50%;">
+            <img class="img3" src="doll.jpg" alt="">
+        </div>
+        <div style="width: 50%;"> 
+            <img class="img4" src="doll.jpg" alt="">
+        </div>
+    </div>
+    <div class="img5">
+        <div >
+            <img  src="doll.jpg" alt="" width="200" height="200">
+        </div>
+
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

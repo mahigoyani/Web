@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: rgb(255, 255, 255);
+            background: radial-gradient(circle, rgb(123, 197, 212) 50%, rgb(124, 198, 212) 85%);
+        }
+
+        body::-webkit-scrollbar {
+            display: none;
+        }
+
+        .pic1 {
+            position: relative;
+            animation-name: earth;
+            text-align: center;
+            margin-top: 150px;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes earth {
+            100% {
+                transform: rotate(80deg);
+            }
+        }
+
+        .pic2 {
+            position: absolute;
+            top: 0px;
+            right: 450px;
+            animation: sun;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes sun {
+            0% {
+                top: 0px;
+            }
+
+            100% {
+                top: 100px;
+            }
+        }
+
+        .pic3 {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation: cloud;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes cloud {
+            0% {
+                left: 0px;
+            }
+
+            100% {
+                left: 1250px;
+            }
+        }
+
+        .pic4 {
+            position: fixed;
+            top: 10px;
+            animation: goat;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes goat {
+            0% {
+                left: 700px;
+            }
+
+            100% {
+                left: 500px;
+            }
+        }
+
+        .pic5 {
+            position: absolute;
+            top: 80px;
+            animation: bird;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes bird {
+            0% {
+                right: 0px;
+            }
+
+            100% {
+                right: 100%;
+            }
+        }
+
+        .pic6 {
+            position: absolute;
+            animation: seattlight;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes seattlight {
+            0% {
+                left: 20%;
+                top: 75%;
+            }
+
+            50% {
+                left: 65%;
+                top: 30%;
+            }
+
+            100% {
+                left: 20%;
+                top: 75%;
+                z-index: -6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic1">
+        <img src="earth-removebg-preview.png" alt="" width="500" height="500">
+        <img class="pic4" src="goat.gif" alt="" height="200" width="200">
+    </div>
+    <div class="pic2">
+        <img src="sun.png" alt="" height="100" width="100">
+    </div>
+    <div class="pic3">
+        <img src="cloud-removebg-preview.png" alt="" height="200" width="200">
+    </div>
+    <div class="pic5">
+        <img src="bird1.gif" alt="" height="150" width="150">
+    </div>
+    <div class="pic6">
+        <img src="satellight-removebg-preview.png" alt="">
+    </div>
+
+</body>
+
+</html>

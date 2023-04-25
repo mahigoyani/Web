@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body::-webkit-scrollbar {
+            display: none;
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        /* first-page */
+        .nav {
+            background-color: black;
+            padding: 5px;
+        }
+
+        .nav ul {
+            display: flex;
+            list-style-type: none;
+            align-content: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        li {
+            color: white;
+        }
+
+        .first-line {
+            margin-right: 30px;
+            color: #8BC734;
+            ;
+        }
+
+        .main {
+            background-image: url(Group\ 1000001847-1\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 695px;
+        }
+
+        .sub-main {
+            margin: 0px auto;
+            width: 80%;
+        }
+
+        .first-containt img {
+            padding: 15px;
+        }
+
+        .sub-nav {
+            list-style-type: none;
+            float: right;
+            display: flex;
+        }
+
+        .sub-nav li {
+            padding: 0px 10px;
+            margin-top: 38px;
+        }
+
+        .sub-nav button {
+            border-radius: 10px;
+            border: white;
+            width: 145px;
+            height: 45px;
+            margin-top: 23px;
+        }
+
+        /* second-page */
+
+        .second-containt {
+            margin-top: 99px;
+
+
+        }
+
+        .second-containt p {
+            color: #8BC734;
+            padding-top: 30px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+
+
+        }
+
+        .second-containt h1 {
+            color: white;
+            font-size: 60px;
+            margin: 0px;
+
+        }
+
+        /* third-page */
+
+        .third-containt {
+            display: flex;
+            margin-top: 15px;
+            align-items: center;
+
+        }
+
+        .third-containt button {
+            color: white;
+            background-color: #8BC734;
+            border-radius: 5px;
+            border: #8BC734;
+            WIDTH: 200px;
+            height: 50px;
+        }
+
+        .third-containt ul {
+            list-style-type: none;
+            display: flex;
+
+        }
+
+        .third-containt li {
+            color: white;
+            margin: 20px;
+            display: flex;
+            font-size: 15px;
+
+        }
+
+        .third-containt i {
+            font-size: 35px;
+            margin: 0px 10px 0px;
+        }
+
+        /* four-page */
+
+        .four-containt p {
+            color: white;
+            margin: 0;
+        }
+
+        .four-containt i {
+            color: yellow;
+            ;
+            margin-bottom: 10px;
+        }
+
+        .main2 {
+            width: 100%;
+            height: 700px;
+            padding: 100px 0;
+        }
+
+        .sub-main2 {
+            margin: 0px auto;
+            width: 80%;
+            display: flex;
+        }
+
+        .emage1 {
+
+            height: 500;
+            width: 500;
+
+
+        }
+
+        /* five-page */
+
+        .five-containt {
+            width: 50%;
+            height: 100%;
+            color: #8BC734;
+            font-size: 20px;
+            padding-left: 100px;
+            margin-top: 120px;
+        }
+
+        .sec-line {
+            color: #8BC734;
+            font-weight: bold;
+            word-spacing: 4px;
+            letter-spacing: 1px;
+            padding-bottom: 20px;
+
+
+        }
+
+        .check1 {
+            padding-right: 10px;
+            color: #8BC734;
+        }
+
+        p {
+            color: black;
+        }
+
+        .five-containt h1 {
+            color: black;
+        }
+
+        .five-containt sup {
+            font-size: 15px;
+            font-weight: 1000;
+        }
+
+        .sec-line1 {
+            padding: 10px 0;
+        }
+
+        .five-containt button {
+            background-color: #8BC734;
+            color: white;
+            border-radius: 5px;
+            padding: 15px 30px;
+            border: #8BC734;
+            margin-top: 15px;
+        }
+
+        .star i {
+            margin: -20px;
+            margin-left: 20px;
+        }
+
+        .star p {
+            color: black;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        .icon-display {
+            display: flex;
+            align-items: flex-end;
+        }
+
+        .third-page {
+            width: 100%;
+            /* margin: 0 auto; */
+            background-color: #e5e5d9;
+            padding: 100px 0;
+        }
+
+        .third-pagemain {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            /* margin-top: 100px; */
+        }
+
+        .third-page P {
+            color: #8CC539;
+        }
+
+        .third-page h2 {
+            padding: 10px;
+        }
+
+        .third-img {
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        .third-img1 {
+            width: 100%;
+            display: flex;
+        }
+
+        .third-img2 {
+            width: 33%;
+            text-align: center;
+            padding: 25px 0;
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 25px;
+            margin: 0 10px;
+        }
+
+        .third-img2 h3 {
+            padding-top: 15px;
+        }
+
+        .icons {
+            padding-top: 15px;
+        }
+
+        .third-img2 p {
+            color: black;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 15px;
+        }
+
+        .third-img3 {
+            padding-top: 15px;
+        }
+
+        p.third-img4 {
+            text-align: center;
+        }
+
+        hr {
+            width: 80%;
+            margin: 35px auto 0;
+        }
+
+        /* hr {
+            width: 80%;
+            margin: 15px auto 0;
+        } */
+
+        p.font-size {
+            margin-top: 23px;
+        }
+
+        .home {
+            margin-top: 50px;
+        }
+
+        /* four page css*/
+        .four-page {
+            width: 100%;
+            padding: 100px 0;
+        }
+
+        .four-page1 {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .four-text {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .four-text p {
+            color: #8CC539;
+            font-size: 15px;
+            padding: 10px 0;
+        }
+
+        .four-display {
+            display: flex;
+            width: 100%;
+            align-items: center;
+        }
+
+        .four-display1 h4 {
+            margin-top: 10px;
+        }
+
+        .four-text h3 {
+            font-size: 40px;
+        }
+
+        p.four-p {
+            color: black;
+            font-size: 15px;
+        }
+
+        .four-img {
+            width: 50%;
+        }
+
+        .directions {
+            flex-direction: row-reverse;
+        }
+
+        .four-contain {
+            margin-left: 180px;
+        }
+
+        .four-text1 {
+            color: black;
+        }
+
+        .four-img2 {
+            margin: 60px 0 20px 0px;
+            text-align: center;
+        }
+
+        .four-img2 sup {
+            font-size: 8px;
+        }
+
+        .four-img3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .four-img4 {
+            width: 20%;
+            margin: 0 auto;
+        }
+
+        .four-display1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .icon-1 p {
+            color: black;
+            margin-left: 5px;
+        }
+
+        .star.icon-1 {
+            text-align: justify;
+            COLOR: YELLOW;
+        }
+
+        .font-icon-1 button {
+            background-color: #8CC539;
+            border-color: white;
+            border-radius: 10px;
+            color: white;
+            width: 150px;
+            height: 40px;
+            margin: 0;
+
+        }
+
+        .flex {
+            width: 35%;
+            margin: 30px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .star-icons {
+            color: yellow;
+
+        }
+
+        /* five-page */
+        .five-page {
+            width: 100%;
+            background-color: rgb(244, 243, 243);
+            padding: 90px 0;
+
+
+        }
+
+        .sub-five {
+            width: 80%;
+            margin: 0 auto;
+
+        }
+
+        .sub-five h3 {
+            text-align: center;
+            padding-bottom: 10px;
+            color: #8BC734;
+            word-spacing: 5px;
+        }
+
+        .sub-five h1 {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 800;
+            font-size: 40px;
+        }
+
+        /* six-page */
+        .six-page {
+            width: 100%;
+            background-color: white;
+            padding: 95px 0;
+        }
+
+        .sub-six {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .six-one_containt {
+            width: 50%;
+        }
+
+        .six-sec_containt {
+            width: 50%;
+        }
+
+        .six-one_containt h3 {
+            color: #8BC734;
+            word-spacing: 5px;
+            padding-bottom: 10px;
+
+        }
+
+        .six-one_containt p {
+            font-size: 20px;
+        }
+
+        .font-icon-2 button {
+
+            background-color: #8CC539;
+            border: #8CC539;
+            border-radius: 10px;
+            width: 200px;
+            padding: 15px 20px;
+        }
+
+        .star.icon-2 {
+            color: yellow;
+        }
+
+        .mahendra-bahubali {
+            width: 82%;
+            float: left;
+        }
+
+        /* seven-page */
+        .seven-page {
+            width: 100%;
+            background-color: rgb(244, 243, 243);
+            padding: 95px 0;
+        }
+
+        .sub-seven {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .seven-first_containt {
+            width: 50%;
+        }
+
+        .seven-sec_containt {
+            width: 50%;
+        }
+
+        .seven-sec_containt h3 {
+            color: #8CC539;
+            word-spacing: 5px;
+            padding-bottom: 15px;
+        }
+
+        .seven-sec_containt sup {
+            font-size: 15px;
+        }
+
+        .seven-sec_containt p {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        /* eight-page */
+        .eight-page {
+            width: 100%;
+            padding: 95px 0;
+
+        }
+
+        .sub-sec {
+            width: 35%;
+            margin-right: 60px;
+
+
+        }
+
+        .sub-eight {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .eight-first_containt {
+            width: 45%;
+            margin-top: 115px;
+        }
+
+        .eight-sec_containt {
+            width: 55%;
+            display: flex;
+            /* margin-left: 120px; */
+        }
+
+        .sub-sec img {
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .sub-sec p {
+            font-size: 20px;
+        }
+
+        .sub-sec p::before {
+            content: '\f00c';
+            font: normal normal 14px/1 FontAwesome;
+            color: #8CC539;
+            margin-right: 10px;
+
+        }
+
+        .sub-sec2 p::before {
+            content: '\f00d';
+            font: normal normal 14px/1 FontAwesome;
+            color: red;
+            margin-right: 10px;
+        }
+
+        .sub-sec2 {
+            width: 50%;
+        }
+
+        .sub-sec2 img {
+            padding-bottom: 40px;
+        }
+
+        .sub-sec2 p {
+            font-size: 20px;
+        }
+
+        .eight-first_containt h3 {
+            color: #8CC539;
+            word-spacing: 5px;
+            padding-bottom: 4%;
+
+        }
+
+        /* .sub-sec-img {
+            position: relative;
+        }
+        .sub-sec2{
+            position: absolute;
+        } */
+        /* nine-page */
+        .nine-page {
+            width: 100%;
+            padding: 95px 0;
+            /* margin: 0 auto; */
+            background-color: rgb(244, 243, 243);
+        }
+
+        .sub-nine {
+            width: 80%;
+            margin: 0 auto;
+            /* margin: 50px 50px; */
+            background-color: rgb(246, 204, 153);
+        }
+
+        .sub-nine h1 {
+            text-align: center;
+            padding: 25px 0;
+        }
+
+        .sub-nine p {
+            text-align: center;
+        }
+
+        .sub-nine2 {
+            display: flex;
+            margin-left: 90px;
+        }
+
+        .nine-first img {
+            padding: 35px 0;
+
+        }
+
+        .nine-sec {
+            padding: 50px 0;
+
+        }
+
+        .nine-sec li {
+            list-style-type: none;
+            color: black;
+            padding: 10px 0;
+        }
+
+        .nine-sec i {
+            color: green;
+            padding-right: 15px;
+        }
+
+        .sub-nine span {
+            color: red;
+        }
+
+        /* ten-page */
+        .ten-page {
+            width: 100%;
+            padding: 60px 0px;
+            height: 500px;
+
+        }
+
+        .ten-page img {
+            margin-left: 70px;
+        }
+
+        .sub-ten {
+            width: 80%;
+            margin: 0 auto;
+            height: 100%;
+        }
+
+        .sub-ten2 {
+            width: 100%;
+            height: 92%;
+            background-image: url(gun-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+
+        .ten-first {
+            width: 65%;
+            height: 95%;
+            background-color: rgb(244, 243, 243);
+
+        }
+
+        .ten-first p {
+            font-size: 20px;
+            padding: 15px 10px;
+        }
+
+        .ten-first h1 {
+            font-size: 15px;
+            padding: 15px 10px;
+        }
+
+        .ten-first span {
+            color: green;
+        }
+
+        /* eleven-page */
+        /* .eleven-page {
+            width: 100%;
+            padding: 95px 0;
+            background-color: rgb(236, 225, 225);
+        }
+
+        .sub-eleven {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .emage1 {
+            width: 50%;
+        }
+
+        .hydrospray {
+            width: 50%;
+            border: 1px solid black;
+        }
+
+        .hydrospray h4 {
+            color: #8CC539;
+            word-spacing: 3px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .hydrospray h1 {
+            text-align: center;
+            font-size: 55px;
+        }
+
+        .hydrospray sup {
+            font-size: 30px;
+        }
+
+        .star-main {
+            display: flex;
+        }
+
+        .star2 p {
+            padding-left: 35px;
+            padding-top: 10px;
+        }
+
+        .rrr {
+            padding-left: 30px;
+            padding-top: 10px;
+        }
+
+        .h4 {
+            color: #8CC539;
+            font-size: 20px;
+        }
+
+        .button-main {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hr1{
+            width: 300%;
+            margin-left: 80px;
+              padding: 0; 
+         margin-right: 150px; 
+        }
+        .hydrospray button {
+            padding: 7px 10px;
+            background-color: rgba(245, 245, 245, 0.875);
+            border: none;
+            margin: 40px 0px 0px 50px;
+            border-radius: 4px;
+        }
+
+        .button-main .price {
+            border: 2px solid transparent;
+            padding: 0;
+            background-color: #8CC539;
+            color: white;
+            text-align: center;
+            margin: 0;
+
+        }
+
+        .button-main .p1 {
+            margin: 30px 10px;
+            padding-top: 10px;
+        }
+
+        .detail {
+            color: black;
+            margin-top: 20px;
+        }
+
+        .detail li {
+            list-style-type: none;
+            margin-left: 35px;
+            font-size: 20px;
+
+        }
+
+        .detail i {
+            padding: 10px;
+        }
+
+ */
+
+        /* twel-page */
+        .twel-page {
+            width: 100%;
+            background-color: rgb(244, 243, 243);
+            padding: 95px 0;
+        }
+
+        .sub-twel {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .twel-first {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #star {
+            color: #8CC539;
+            padding-top: 5px;
+        }
+
+        #star1 {
+            color: #8CC539;
+            padding: 10px 0px;
+        }
+
+        .twel-sec {
+            width: 200px;
+            height: 420px;
+            background-color: white;
+            font-size: 20px;
+            padding: 25px 10px 0px 30px;
+            margin-top: 40px;
+            margin: 15px 15px 10px 0px;
+            box-shadow: 5px 5px 5px 2px rgb(156, 150, 150);
+        }
+
+        .sub-twel button {
+            color: white;
+            background-color: #8CC539;
+            padding: 20px 20px;
+            border-radius: 10px;
+            border: 1px solid white;
+            margin-left: 455px;
+            margin-top: 15px;
+        }
+
+        /* footer */
+        .footer {
+            width: 100%;
+            height: 400px;
+            background-color: rgb(27, 26, 26);
+        }
+
+        .sub-footer {
+            width: 80%;
+            height: 75%;
+            margin: 0 auto;
+            display: flex;
+            padding: 50px 0px;
+
+        }
+
+        .footer-first {
+            width: 25%;
+            height: 100px;
+            text-align: left;
+        }
+
+        .footer-first img {
+            padding-bottom: 25px;
+        }
+
+        .footer-first p {
+            color: white;
+        }
+
+        .footer-2 {
+            width: 25%;
+            height: 100%;
+        }
+
+        .footer-2 h1 {
+            color: white;
+            font-size: 30px;
+            padding-bottom: 25px;
+        }
+
+        .footer-2 p {
+            color: #8CC539;
+            font-size: 20px;
+            padding: 8px 0px;
+        }
+
+        .footer-3 {
+            width: 25%;
+        }
+
+        .footer-3 h1 {
+            color: white;
+            font-size: 30px;
+            padding-bottom: 25px;
+
+        }
+
+        .footer-3 p {
+            color: white;
+            font-size: 20px;
+            padding: 8px 0px;
+
+        }
+
+        .footer-3 span {
+            color: #8CC539;
+        }
+
+        .footer-4 {
+            width: 25%;
+        }
+
+        .footer-4 h1 {
+            color: white;
+            font-size: 30px;
+            padding-bottom: 25px;
+
+        }
+
+        .footer-4 p {
+            color: white;
+            font-size: 20px;
+        }
+
+        .footer-4 p span {
+            font-weight: 800;
+            font-size: 22px;
+
+        }
+
+        .hr {
+            width: 100%;
+            margin: 0;
+        }
+
+        /* Arrow */
+        .fa-angle-up {
+            margin-left: 470px;
+        }
+
+        .fa-angle-down {
+            padding-left: 300px;
+            margin: 0;
+        }
+
+        #down1 {
+            padding-left: 311px;
+        }
+
+        #down2 {
+            padding-left: 322px;
+        }
+
+        #down3 {
+            padding-left: 417px;
+        }
+
+        #down4 {
+            padding-left: 342px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="nav">
+            <ul>
+                <li class="first-line">FREE SHIPPING</li>
+                <li>Over 300+ 5-Star Reviews</li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="sub-main">
+                <div class="first-containt">
+                    <img src="logo (2).png" alt="not found" height="60" width="200">
+                    <ul class="sub-nav">
+                        <li>TRACK ORDER</li>
+                        <li>CONTACT US</li>
+                        <button type="button">ORDER NOW</button>
+                    </ul>
+                </div>
+                <div class="second-containt">
+                    <p>EXCLUSIVE HIGH PRESSURE</p>
+                    <h1>CLEANING SURFACES <br>MADE EFFECTIVE <br>&QUICK</h1>
+
+                </div>
+                <div class="third-containt">
+                    <button type="button">ORDER NOW</button>
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-plane"></i>FREE SHIPPING <br> WORLDWIDE
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-medal"></i> SATISFACTION <br>GUARANTEE
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-comment-dots"> </i>24/7CUSTOMER <br>SERVICE
+                        </li>
+                    </ul>
+                </div>
+                <div class="four-containt">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Rated 4.8 by 354 customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <div class="sub-main2">
+                <div class="emage1">
+                    <img src="first-img.png" alt="hydrosprsy">
+                    <div class="image2">
+                        <img src="first-img.png" alt="" height="125" width="125">
+                        <img src="sec-img.png" alt="" height="125" width="125">
+                        <img src="third-img.png" alt="" height="125" width="125">
+                        <img src="four-img.jpeg" alt="" height="125" width="125">
+
+                    </div>
+                </div>
+
+                <div class="five-containt">
+                    <h1>HYDROSPRAY<sup>TM</sup></h1>
+                    <p class="sec-line">WASHER SPRAY GUN</p>
+                    <p class="sec-line1"><i class="fa-solid fa-check check1"></i>High Perfomance, very low consumption
+                    </p>
+                    <p class="sec-line1"><i class="fa-solid fa-check check1"></i>Thanks to its 48V lithium battery it
+                        lasts 2.5 to 3 hours</p>
+                    <p class="sec-line1"><i class="fa-solid fa-check check1"></i>3 Attachments included in the package
+                    </p>
+                    <p class="sec-line1"><i class="fa-solid fa-check check1"></i>Form washing cars to waterning your
+                        garden</p>
+                    <p class="sec-line1"><i class="fa-solid fa-check check1"></i>5-meter hose included in the set</p>
+                    <div class="icon-display">
+                        <button type="button">ORDER NOW</button>
+                        <div class="four-containt star">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Rated 4.8 by 354 customers</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="third-page">
+            <div class="third-pagemain">
+                <p><b> HYDROSPRAY REVIEWS</b></p>
+                <h2>WHAT OUR CUSTOMERS ARE SAYING</h2>
+            </div>
+            <div class="third-img">
+                <div class="third-img1">
+                    <div class="third-img2">
+                        <img src="Rectangle 85.png" alt="">
+                        <h3>VERY CONVENIENT <br> AND EASY TO USE</h3>
+                        <div class="star-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>I was looking for a power washer to clean my boat where I do not have pressure supplied water
+                            but "ample" lake water.</p>
+
+                        <p class="third-img3"> It is excellent to wash out the interior and wash off the exterior.
+                            <hr>
+                        </p>
+                        <p class="third-img4">Cliff.-London,UK</p>
+                    </div>
+                    <div class="third-img2">
+                        <img src="Rectangle 87.png" alt="">
+                        <h3>LOVE IT!</h3>
+                        <div class="star-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <P class="font-size">I hate cleaning my bathroom. And this makes the job super easy. Spray some
+                            cleaner down. Put the hose in the sink to suck up water. Then wash everything away
+                            <hr class="home">
+                        </P>
+                        <p class="third-img4">Britten C.-Wolverharmpton,UK</p>
+                    </div>
+                    <div class="third-img2">
+                        <img src="Rectangle 88 (1).png" alt="">
+                        <h3>GREAT AROUND HOME,<br>GARAGE,BOAT</h3>
+                        <div class="star-icons">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <P>This is so handy, especially for the northern climate where we have to turn off our outdoor
+                            water
+                            and unhook our hoses for the winter. We use 2 liter bottles with it or a 5 gallon bucket.
+                            <hr class="home">
+                        </P>
+                        <p class="third-img4">Linda S.-omaha,US</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="four-page">
+            <div class="four-page1">
+                <div class="four-display">
+                    <div class="four-text">
+                        <p>OUTPERFORMING CONVENTIONAL DETERGENT</p>
+                        <h3>ALL IN ONE CONVENIENT <br> UNIVERSAL KIT!</h3>
+                        <p class="four-p">Hydrospray" covers everything, from washing cars to <br> motorcycles, from
+                            cleaning tiles to irrigation systems. <br> But not only that.</p>
+                    </div>
+                    <div class="four-img">
+                        <img src="croped2_480x480 2.png" alt="" width="100%" height="419">
+                    </div>
+                </div>
+                <div class="four-display directions">
+                    <div class="four-text four-contain">
+                        <h3>THE HYDROSPRAY™</h3>
+                        <p class="four-p"> The HydroSpray" is a tool that has surpassed the competition by outperforming
+                            conventional detergents,</p>
+
+                        <p class="four-p"> Need to water your garden, shine up your vehicle or clean your windows? It
+                            does
+                            all of it</p>
+                    </div>
+                    <div class="four-img">
+                        <img src="croped2_480x480 3.png" alt="" width="120%" height="419">
+                    </div>
+                </div>
+                <div class="four-img2">
+                    <h3>HYDROSPRAY <sup>TM</sup> IS PERFECT FOR:</h3>
+                </div>
+                <div class="four-img3">
+                    <div class="four-display1">
+                        <div>
+                            <img src="CAR.png" alt="">
+                            <h4><B>CARS</B></h4>
+                        </div>
+                        <div>
+                            <img src="GARDEN.png" alt="">
+                            <h4><b>GARDEN</b></h4>
+                        </div>
+                        <div>
+                            <img src="HOUSE.png" alt="">
+                            <h4><b>HOUSE</b></h4>
+                        </div>
+                        <div>
+                            <img src="BOAT.png" alt="">
+                            <h4><b>BOATS</b></h4>
+                        </div>
+                        <div>
+                            <img src="GARAGE.png" alt="">
+                            <h4><b>GARAGE</b></h4>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <div class="font-icon-1">
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div class="star icon-1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Rated 4.8 by 354 customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="five-page">
+            <div class="sub-five">
+                <h3>EAST TO USE</h3>
+                <h1>UNPACKING & LAUNCHING</h1>
+                <img src="car.jpeg" alt="" height="600" width="1100">
+            </div>
+        </div>
+        <div class="six-page">
+            <div class="sub-six">
+                <div class="six-one_containt">
+                    <h3>OUR MISSION</h3>
+                    <h1>HYDROSPRAY IS THE HIGH <br>PRESSURE CLEANER OF <br>THE FUTURE</h1>
+                    <p>Do you want to clean any surface effectively and quickly?</p><br>
+                    <p>Say goodbye to bulky irrigation hoses, irregular jets and <br>stubborn stains thanks to the
+                        efficiency and versatility of <br>the new HydroSpray.</p><br>
+                    <p>70% of people spend more than 2h a week cleaning their <br>car, motorcycle or patio!</p><br>
+                    <p>Let's simplify your weekends with this revolutionary tooll </p>
+                    <div class="flex mahendra-bahubali">
+                        <div class="font-icon-2">
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div class="star icon-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Rated 4.8 by 354 customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="six-sec_containt">
+                    <img src="six-page.jpeg" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="seven-page">
+            <div class="sub-seven">
+                <div class="seven-first_containt">
+                    <img src="seven.jpeg" alt="" width="450" height="450">
+                </div>
+                <div class="seven-sec_containt">
+                    <h3>OUR MOTOR</h3>
+                    <h1>HIGH PERFORMANCE, <br>VERY LOW <br>CONSUMPTION WITH <br>HYDROSPRAY <sup>TM</sup></h1><br>
+                    <p>The motor of the HydroSpray™ is designed to give you the best possible performance. </p><br>
+                    <p>A perfect water pressure with minimal consumption! The wireless design allows users to use it
+                        outdoors,without having a power source nearby.</p><br>
+                    <p>Thanks to the highly professional technology of this pressure washer, you can achieve maximum
+                        results with just one bucket of water.</p>
+                    <div class="flex mahendra-bahubali">
+                        <div class="font-icon-2">
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div class="star icon-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Rated 4.8 by 354 customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eight-page">
+            <div class="sub-eight">
+                <div class="eight-first_containt">
+                    <h3>AVERACE VS SUPERS</h3>
+                    <h1>DON’T SETTLE FOR LESS</h1><br>
+                    <p>We have created the machine that is a winner in every aspect. <br> From superior performance to
+                        efficiency. HydroSpray got you <br> covered in every cleaning aspect.</p>
+                    <div class="flex mahendra-bahubali">
+                        <div class="font-icon-2">
+                            <button>ORDER NOW</button>
+                        </div>
+                        <div class="star icon-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <p>Rated 4.8 by 354 customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="eight-sec_containt">
+                    <div class="sub-sec">
+                        <div class="sub-sec-img">
+                            <img src="./image 19.png" alt="">
+                        </div>
+                        <p class="check">
+                            Super powerful running force<br>connecting shaft
+                            <br> 6-cylinder technology
+                        </p><br>
+                        <p>52V is full of power and strong pressure</p><br>
+                        <p>Stable operation, less <br> vibration and quieter</p><br>
+                        <p>Small size and light <br> weight</p>
+
+                    </div>
+                    <div class="sub-sec2">
+                        <img src="image 20.png" alt="">
+                        <p>The traditional <br> three-piston pump <br> has low pressure</p><br>
+                        <p>Only supports 12V <br> voltage</p><br>
+                        <p>Unstable operation</p><br>
+                        <p>Short service life</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nine-page">
+            <div class="sub-nine">
+                <h1>THE SECRET OF A GREAT CLEANING</h1>
+                <p>text cta</p>
+                <div class="sub-nine2">
+                    <div class="nine-first">
+                        <img src="book-img.png" alt="">
+                    </div>
+                    <div class="nine-sec">
+                        <li> <i class="fa-solid fa-check"></i> Reusable</li>
+                        <li> <i class="fa-solid fa-check"></i>powerful</li>
+                        <li> <i class="fa-solid fa-check"></i>Saves Honey</li>
+                        <li> <i class="fa-solid fa-check"></i>Earth-Friendly</li>
+                        <li> <i class="fa-solid fa-check"></i>Durable And Sturdy</li>
+                        <li> <i class="fa-solid fa-check"></i>Saves Time (no restringing)</li>
+                        <li> <i class="fa-solid fa-check"></i>Made Of High Quality Steel</li>
+                    </div>
+                </div>
+                <p><span>Please be aware:</span>This E-Book cannot be purchased anywhere else. <br> Order your Greenstar
+                    Hydrospray today to get free access.</p>
+                <h1>$ price Value</h1>
+            </div>
+        </div>
+        <div class="ten-page">
+            <div class="sub-ten">
+                <h1>FREQUENTLY ASKED QUESTIONS</h1>
+                <div class="sub-ten2">
+                    <div class="ten-first">
+                        <p>Will it fit my trimmer? <i class="fa-solid fa-angle-up"></i></p>
+                        <h1>With the provided adapter kit Trimmer Boss fits 99% of the trimmers on the market. <br> <br>
+
+                            If after all it doesn't fit your trimmer, contact us at
+                            <span>.cosupport@tbofficialm</span>and we will make sure to either provide a solution or
+                            give you a full refund.
+                        </h1>
+                        <hr class="hr">
+                        <p>How long before I need to replace the head? <i class="fa-solid fa-angle-down"></i></p>
+                        <hr class="hr">
+                        <p>Will it cause damage on the affected areas? <i class="fa-solid fa-angle-down" id="down1"></i>
+                        </p>
+                        <hr class="hr">
+                        <p>When will I receive the included E-book? <i class="fa-solid fa-angle-down" id="down2"></i>
+                        </p>
+                        <hr class="hr">
+                        <p>How long does delivery take? <i class="fa-solid fa-angle-down" id="down3"></i></p>
+                        <hr class="hr">
+                        <p>When can I use the included warranty? <i class="fa-solid fa-angle-down" id="down4"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="eleven-page">
+            <div class="sub-eleven">
+                <div class="emage1">
+                    <img src="first-img.png" alt="hydrosprsy">
+                    <div class="image2">
+                        <img src="first-img.png" alt="" height="125" width="125">
+                        <img src="sec-img.png" alt="" height="125" width="125">
+                        <img src="third-img.png" alt="" height="125" width="125">
+                        <img src="four-img.jpeg" alt="" height="125" width="125">
+
+                    </div>
+                </div>
+                <div class="hydrospray">
+                    <h4>HIGH PERFOMANCE & VERY LOW CONSUMPTION</h4>
+                    <h1>HYDROSPRAY <sup>TM</sup></h1>
+                    <div class="star-main">
+                        <div class="star icon-2 rrr">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="star2">
+                            <p> Rated 4.8 by 354 customers</p>  <hr class="hr1"> 
+                        </div>
+                    </div>
+                    <div class="button-main">
+                        <button type="button">Regularly $238.00</button>
+                        <button class="price">Today $119.00</button>
+                        <h4 class="p1">Limited time only</h4>
+                    </div>
+                    <div class="detail">
+                        <li> <i class="fa-solid fa-check"></i>The greatest battery life to performance ratio</li>
+                        <li><i class="fa-solid fa-check"></i>Adjustable size, shape and intensity with nozzles</li>
+                        <li><i class="fa-solid fa-check"></i>From cleaning irrigation systems to motorcycles
+                        </li>
+                        <li><i class="fa-solid fa-check"></i>All in one convenient universal kit!</li>
+                        <li><i class="fa-solid fa-check"></i>1 full-charge is enough to wash 5 cars</li>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+        <div class="twel-page">
+            <div class="sub-twel">
+                <div class="twel-first">
+                    <h1>CUSTOMER REVIEWS</h1>
+                    <div>
+                        <img src="logo (2).png" alt="">
+                    </div>
+                </div>
+                <div id="star">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <p>Rated 4.8 by 354 customers</p>
+                </div>
+                <div style=" display: flex;">
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                </div>
+                <div style=" display: flex;">
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                    <div class="twel-sec">
+                        <img src="eleven-page-removebg-preview.png" alt="">
+                        <h3>John K.</h3>
+                        <div id="star1">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p>The perfect car wash tool! Apply the cleaner to the machine and use the Hydrospray.</p>
+                        <h4>5-star efficiency and ease of use!</h4>
+                    </div>
+                </div>
+                <button type="button">SHOW MORE REVIEWS</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="sub-footer">
+                <div class="footer-first">
+                    <img src="logo (2).png" alt="">
+                    <p>@ 2023. GreenStar Tools <sup>TM</sup></p>
+                </div>
+                <div class="footer-2">
+                    <h1>QUICK LINKS</h1>
+                    <p>Contact us</p>
+                    <p>Privacy Polloy</p>
+                    <p>Terms of Service</p>
+                    <p>Sgipping & Delivery</p>
+                    <p>Returns & Guarantee</p>
+                    <p>Safety Notice</p>
+                </div>
+                <div class="footer-3">
+                    <h1>CONTACT US</h1>
+                    <p>Don't hesitate to contact us if <br> you have any questions.</p><br>
+                    <p>Email: <br> <span>info@greenstar-tools.com</span></p><br>
+                    <p>Call us: <br> <span>+1 (646) 980-2401</span></p>
+                </div>
+                <div class="footer-4">
+                    <h1>ABOUT US</h1>
+                    <p><span> @GreenStar Tools</span> company was created in 2005 with one <br> intention, produce to
+                        our
+                        customers <br>
+                        original and new concepts of the highest quality <br>
+                        screwdrivers set whilst being as convenience as possible.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

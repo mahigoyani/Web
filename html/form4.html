@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            margin-left: 40px;
+            width: 80%;
+            margin:  18px auto;
+        }
+        label {
+            font-size: 20px;
+        }
+        .input_containt {
+            height: 25px;
+            width: 280px;
+        }
+        .main_containt {
+            width: 80%;
+            margin: 50px auto;
+            border: 2px solid black;
+            height: 550px;
+        }
+        .button{
+            width: 60%;
+            margin: 0 auto;
+            font-size: 25px;
+            margin-left: 75px;
+            border-radius: 15px 5px;
+            border-color: rgb(56, 56, 58);
+            background-color: rgb(221, 216, 225);
+            color: rgb(73, 73, 74);  
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_containt">
+        <div style="display: flex;">
+            <div>
+                <img  src="background1.webp" alt="not found" width="700" height="550" >
+            </div>
+            <div style="padding: 18px;">
+                <form>
+                    <div class="div">
+                        <label for="name">Full Name:</label><br>
+                        <input class="input_containt" type="text" id="name" name="text" type="Full Name" placeholder="Name...">
+                    </div>
+                    <div class="div">
+                        <label for="email">Email:</label><br>
+                        <input class="input_containt" type="email" id="email" name="@gmail.com" value="Email"
+                            placeholder="Email address">
+                    </div>
+                    <div class="div">
+                        <label for="username">Username:</label><br>
+                        <input class="input_containt" type="text" id="username" name="text" value="Username"
+                            placeholder="Username...">
+                    </div>
+                    <div class="div">
+                        <label for="pass">Password:</label><br>
+                        <input class="input_containt" type="password" id="pass" name="password" value="Password"
+                            placeholder="Password">
+                    </div>
+                    <div class="div">
+                        <label for="password">Repeat Password:</label><br>
+                        <input class="input_containt" type="password" id="password" name="password" value="Repeat Password"
+                            placeholder="repeat password">
+                    </div>
+                    <div class="div">
+                        <input type="checkbox">
+                        <label for="box">I agree to the <b>Terms of <br> user</b> </label><br>
+                    </div>
+                    <div>
+                        <button class="button" type="button">Sign up</button>
+                    </div>   
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

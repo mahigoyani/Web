@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main_list {
+            background-color: rgb(161, 181, 199);
+            border: 3px dashed black;
+            width: 40%;
+            margin: 0 auto;
+        }
+        .name {
+            display: flex;
+        }
+        .form{
+            padding:0 50px;
+        }
+    </style>
+</head>
+<body >
+    <div class="main_list" >
+        <div style="text-align: center;">
+            <h1>Registration form</h1>
+        </div>
+        <div class="form">
+            <form>
+            <div class="name">
+                <div>
+                    <label for="fname">first name:</label><br>
+                    <input type="text" placeholder="enter name"><br><br>
+                </div>
+                <div style="padding: 0 100px;">
+                    <label for="lname">last name:</label><br>
+                    <input type="text" placeholder="enter name"><br><br>
+                </div>
+            </div>
+            <div>
+                <label for="Email">Email:</label><br>
+                <input type="email" id="Email" name="Email" value="Email" placeholder="@gmail.com"><br><br>
+            </div>
+            <div>
+                <label for="Bday">Birthday:</label><br>
+                <input type="date" id="bday" name="bdaY" value="Birthday">
+            </div>
+            <div>
+               <p>choose your gendar:</p>
+                <input type="radio" id="male" name="fav_gendar" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="Female" name="fav_gendar" value="Female">
+                <label for="Female">Female</label><br>
+                <input type="radio" id="other" name="fav_gendar" value="Other">
+                <label for="other">Other</label><br><br>
+            </div>
+            <div>
+                <label for="m.number">Contact no:</label>
+                <input type="tel" id="m.number" name="number" value="Contact no." placeholder="12345-6789" maxlength="10"><br><br>
+            </div>
+            <div>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" value="Password" placeholder="enter your password"><br><br>
+            </div>
+            <div style="text-align: center;">
+                <button type="button"> <b> Submit</b></button><br><br>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html

@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main {
+            padding: 0px 50px;
+
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-first {
+            display: flex;
+            border: 1px solid black;
+            width: 146px;
+            height: 35px;
+            border-radius: 50px;
+            background-color: black;
+            align-items: center;
+        }
+
+        .nav-icon {
+            height: 35px;
+            border-radius: 40px;
+            width: 35px;
+            background-color: #ECECEC;
+        }
+
+        .nav-icon i {
+            padding: 10px 13px;
+        }
+
+        .sub-nav-first p {
+            margin: 15px;
+            color: white;
+        }
+
+        .sub-nav-first i {
+            padding: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .sub-nav-sec {
+            display: flex;
+        }
+
+        .sub-nav-sec p {
+            margin: 0 10px;
+        }
+
+        /* sec containt */
+
+        .first-containt {
+            width: 100%;
+            display: flex;
+            margin-top: 15px;
+        }
+
+        .sub-first {
+            width: 50%;
+            border-radius: 20px;
+            margin-right: 10px;
+            background-color: lightgray;
+        }
+
+        .sub-sec {
+            width: 50%;
+            margin-left: 10px;
+        }
+
+        .sub-first h1 {
+            padding: 80px 0px 0px 30px;
+        }
+
+        .sub-first p {
+            padding-left: 30px;
+        }
+
+        .sub-first button {
+            height: 50px;
+            width: 150px;
+            margin: 0px 0px 0px 30px;
+            color: white;
+            background-color: black;
+            border-radius: 10px;
+        }
+
+        .sub-first img {
+            padding: 50px 0px 0px 50px;
+            color: rgb(92, 92, 92);
+        }
+
+        /* second-containt */
+        .second-containt {
+            width: 100%;
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .second-one {
+            width: 46%;
+        }
+
+        .second-one h2 {
+
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .second-two {
+
+            width: 46%;
+            padding: 60px 0px 0px 30px;
+            background-color: lightgray;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .second-two h2 {
+            font-size: 40px;
+            margin: 0;
+
+        }
+
+        .second-two h5 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        .second-two h6 {
+            margin-top: 5px;
+            color: rgb(170, 169, 169);
+            font-size: 20px;
+        }
+
+        .sec-emg {
+            position: absolute;
+            left: 510px;
+            top: -20px;
+            transform: rotate(20deg);
+        }
+
+        /* third-containt */
+        .third-containt {
+            width: 100%;
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #98CEA9;
+            border-radius: 20px;
+        }
+
+        /* four-containt */
+        .four-containt {
+            width: 100%;
+        }
+
+        .sub-four-containt {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .four-one {
+            width: 30%;
+        }
+
+        .one-round {
+            background-color: #85A6E7;
+            width: 70px;
+            height: 70px;
+            border-radius: 45px;
+        }
+
+        .four-two {
+            width: 30%;
+
+        }
+
+        .two-round {
+            background-color: #EFA383;
+            width: 70px;
+            height: 70px;
+            border-radius: 45px;
+        }
+
+        .four-three {
+            width: 30%;
+        }
+
+        .three-round {
+            background-color: #98CEA9;
+            width: 70px;
+            height: 70px;
+            border-radius: 45px;
+        }
+
+        /* five-containt */
+        .five-containt {
+            width: 100%;
+
+        }
+
+        /* one-box */
+
+        .sub-five-containt {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            width: 100%;
+            margin: 10px 10px;
+        }
+
+        .five-two {
+            width: auto;
+            background-color: lightgray;
+            padding: 250px 20px 25px 20px;
+
+        }
+
+        .five-one-sub {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #E3E3E3;
+            position: absolute;
+            border-radius: 100px;
+            top: -48px;
+            left: 110px;
+
+        }
+
+        .five-one-sub1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #E3E3E3;
+            position: absolute;
+            border-radius: 100px;
+            top: -25px;
+            left: -52px;
+
+        }
+
+        /* two-box */
+
+        .sub-five-containt2 {
+            width: 100%;
+            border-radius: 20px;
+            background-color: #EFA383;
+            margin: 10px 10px;
+            height: 385px;
+
+
+        }
+
+        .sub-five-containt2 img {
+            padding-left: 200px;
+        }
+
+        .calender {
+            padding: 20px 0px 0px 200px;
+
+        }
+
+        /* third-box */
+
+        .sub-five-containt3 {
+            width: 100%;
+            border-radius: 20px;
+            background-color: #98CEA9;
+            margin: 0px 10px;
+        }
+
+        .sub-five-containt3 img {
+            padding: 50px 50px 50px 50px;
+            width: 497px;
+            height: 280px;
+        }
+
+        /* four-box */
+        .sub-five-containt4 {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            width: 100%;
+            margin: 0px 10px;
+        }
+
+        .five4-two {
+            width: auto;
+            background-color: lightgray;
+            padding: 250px 20px 25px 20px;
+        }
+
+        .grid1 {
+            display: flex;
+            margin: 10px 0px;
+        }
+
+        .grid2 {
+            display: flex;
+        }
+
+        /* six-containt */
+        .six-main {
+            display: flex;
+        }
+
+        .six-containt {
+            width: 50%;
+            padding-top: 100px;
+        }
+
+        .six-containt button {
+            width: 120px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .p1 {
+            color: lightgray;
+        }
+
+        /* six2-containt */
+        .six2-containt {
+            width: 50%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .six2-containt div {
+            margin: 10px;
+            background-color: #F7F7F7;
+            text-align: center;
+            padding: 0px 5px;
+            border-radius: 20px;
+        }
+
+        .six2-containt img {
+            font-size: 30px;
+
+        }
+
+        .six2-containt p {
+            margin: 0;
+        }
+
+        .six2-containt div {
+            width: 80%;
+        }
+
+
+
+        /* seven-containt */
+        .seven-sub {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .seven-first {
+            width: 30%;
+            text-align: center;
+            border-radius: 20px;
+            background-color: #F7F7F7;
+            padding: 20px 10px;
+
+        }
+
+        .seven-first button {
+            width: 250px;
+            height: 40px;
+            border: 2px solid #D1D1D1;
+            border-radius: 15px;
+            background-color: #ECECEC;
+        }
+
+        .seven-second {
+            width: 30%;
+            border: 2px solid #B9E0C6;
+            text-align: center;
+            position: relative;
+            padding: 20px 10px;
+            background-color: #DAF2E2;
+            border-radius: 20px;
+        }
+
+        .seven-second button {
+            width: 250px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .seven-second h3 {
+            border: 2px solid #B9E0C6;
+            width: 140px;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            position: absolute;
+            top: -24px;
+            left: 110px;
+            border-radius: 15px;
+            background-color: #DAF2E2;
+
+        }
+
+        .seven-third {
+            width: 30%;
+            text-align: center;
+            padding: 20px 10px;
+            border-radius: 20px;
+            background-color: #F7F7F7;
+        }
+
+        .seven-third button {
+            width: 250px;
+            height: 40px;
+            border: 2px solid #D1D1D1;
+            border-radius: 15px;
+            background-color: #ECECEC;
+        }
+
+        /* footer */
+        .footer {
+            width: 100%;
+            background-color: #F7F7F7;
+            height: 120px;
+            border-radius: 20px;
+            margin-top: 90px;
+            position: relative;
+            overflow: hidden;
+
+        }
+
+        .footer-one {
+            display: flex;
+            align-items: baseline;
+            padding: 37px 0px 0px 65px;
+        }
+
+        .footer-p {
+            margin-left: 30px;
+            font-size: 20px;
+
+        }
+
+        .footer-img {
+            position: absolute;
+            top: -30px;
+            left: 680px;
+            transform: rotate(105deg);
+        }
+
+        .footer-third {
+            display: flex;
+            margin-left: 430px;
+            font-size: 20px;
+        }
+
+        .mahi {
+            margin-right: 40px;
+        }
+
+        @media only screen and (max-width:600px) {
+            .main {
+                padding: 0px;
+            }
+
+            .nav {
+                display: block;
+                margin: 0 107px;
+
+            }
+
+            .sub-nav-sec {
+                display: none;
+            }
+
+            .first-containt {
+                display: block;
+
+            }
+
+            .sub-first {
+                width: 100%;
+
+            }
+
+            .sub-first img {
+                padding: 50px 147px;
+                text-align: center;
+            }
+
+            .sub-first h1 {
+                margin: 0;
+                padding: 0px;
+                text-align: center;
+                font-size: 35px;
+            }
+
+            .sub-first p {
+                text-align: center;
+                font-size: 17px;
+                padding: 0;
+            }
+
+            .sub-first button {
+                margin: 0px 0px 0px 100px;
+            }
+
+            .sub-sec {
+                width: 100%;
+                margin: 0;
+            }
+
+            .sub-sec img {
+                width: 100%;
+                height: 250px;
+                margin: 15px 0;
+
+            }
+
+            .second-containt {
+                display: block;
+
+            }
+
+            .second-one {
+                width: 100%;
+            }
+
+            .second-one h2 {
+                font-size: 30px;
+            }
+
+            .second-one p {
+                font-size: 19px;
+            }
+
+            .second-two {
+                width: 100%;
+                padding: 60px 0px 0px 5px;
+            }
+
+            .second-two h2 {
+                font-size: 55px;
+                text-align: center;
+            }
+
+            .second-two h5 {
+                text-align: center;
+            }
+
+            .second-two h6 {
+                text-align: center;
+            }
+
+            .third-containt {
+                width: 100%;
+                height: 500px;
+            }
+
+            .third-containt img {
+                width: 250px;
+                height: 450px;
+            }
+
+            .sub-four-containt {
+                display: block;
+            }
+
+            .four-containt h2 {
+                font-size: 45px;
+            }
+
+            .four-one p {
+                font-size: 25px;
+            }
+
+            .four-one {
+                width: 100%;
+            }
+
+            .four-one h3 {
+                font-size: 35px;
+            }
+
+            .four-two {
+                width: 100%;
+            }
+
+            .four-two h3 {
+                font-size: 35px;
+            }
+
+            .four-two p {
+                font-size: 25px;
+            }
+
+            .four-three {
+                width: 100%;
+            }
+
+            .four-three h3 {
+                font-size: 35px;
+            }
+
+            .four-three p {
+                font-size: 25px;
+            }
+
+            .grid1 {
+                display: block;
+                margin: 10px 0px;
+            }
+
+            .five-containt h2 {
+                font-size: 30px;
+            }
+
+            .five-two {
+                text-align: center;
+            }
+
+            .five-two h3 {
+                font-size: 25px;
+            }
+
+            .five-two p {
+                font-size: 20px;
+            }
+
+            .sub-five-containt {
+                margin: 0;
+            }
+
+            .sub-five-containt2 {
+                margin: 10px 0;
+            }
+
+            .sub-five-containt2 img {
+                padding-left: 80px;
+            }
+
+            .sub-five-containt3 {
+                margin: 0;
+                height: 300px;
+            }
+
+            .sub-five-containt3 img {
+                padding: 40px 40px 40px 40px;
+                width: 285px;
+                height: 220px;
+            }
+
+            .grid2 {
+                display: block;
+            }
+
+            .sub-five-containt4 {
+                margin: 10px 0px;
+            }
+
+            .five4-two {
+                text-align: center;
+            }
+
+            .grid2 h3 {
+                font-size: 30px;
+            }
+
+            .five4-two p {
+                font-size: 20px;
+            }
+
+            .six-main {
+                display: block;
+            }
+
+            .six-containt {
+                width: 100%;
+                text-align: center;
+                padding: 0;
+            }
+
+            /* .six2-containt {
+                width: 100%;
+
+            } */
+
+            .seven-sub {
+                display: block;
+            }
+
+            .seven-first {
+                width: 100%;
+                text-align: center;
+                padding: 20px 0px;
+            }
+
+            .seven-second {
+                width: 100%;
+                padding: 20px 0px;
+                margin-top: 30px;
+            }
+
+            .seven-second h3 {
+                left: 95px;
+            }
+
+            .seven-third {
+                width: 100%;
+                padding: 20px 0px;
+                margin-top: 15px;
+            }
+
+
+
+            .footer-one {
+                display: block;
+                padding: 20px 0px 0px 85px;
+
+            }
+
+            .footer {
+                margin-top: 30px;
+                height: 165px;
+
+            }
+
+            .footer-p {
+                margin-left: -15px;
+                font-size: 20px;
+            }
+
+            .footer-third {
+                margin-left: -15px;
+                font-size: 17px;
+                margin-top: -20px;
+            }
+
+            .six2-containt {
+                /* justify-content: center; */
+                /* margin-left: 40px; */
+                /* align-items: center; */
+                display: grid;
+                grid-template-columns: auto auto;
+                gap: 15px;
+                width: 100%;
+                margin: 0 auto;
+            }
+        }
+
+        @media only screen and (min-width:601px) and (max-width:768px) {
+            .first-containt {
+                display: block;
+            }
+
+            .sub-first {
+                width: 100%;
+                height: 550px;
+            }
+
+            .sub-first h1 {
+                padding: 80px 0px 0px 30px;
+                font-size: 50px;
+            }
+
+            .sub-first p {
+                font-size: 20px;
+                k
+            }
+
+            .sub-sec {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .grid1 {
+                display: block;
+            }
+
+            .grid2 {
+                display: block;
+            }
+
+            .sub-five-containt3 img {
+                width: 550px;
+            }
+
+            .sub-five-containt4 {
+                margin: 10px 10px;
+            }
+
+            .seven-first {
+                width: 25%;
+            }
+
+            .seven-second {
+                width: 25%;
+            }
+
+            .seven-third {
+                width: 25%;
+            }
+
+            .seven-second h3 {
+                width: 110px;
+                padding: 5px;
+                top: -19px;
+                left: 28px;
+            }
+
+            .seven-first button {
+                width: 120px;
+                height: 35px;
+            }
+
+            .seven-second button {
+                width: 120px;
+                height: 35px;
+            }
+
+            .seven-third button {
+                width: 120px;
+                height: 35px;
+            }
+
+            .footer {
+                margin-top: 35px;
+            }
+
+            .footer-one {
+                padding: 37px 0px 0px 65px;
+            }
+
+            .footer-p {
+                margin-left: 20px;
+                font-size: 15px;
+            }
+
+            .footer-third {
+                margin-left: 40px;
+                font-size: 15px;
+            }
+
+            .mahi {
+                margin-right: 20px;
+            }
+
+            .six-main {
+                display: block;
+            }
+        }
+    </style>
+
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="nav-first">
+                <div class="nav-icon">
+                    <i class="fa-solid fa-arrow-pointer"></i>
+                </div>
+                <div class="sub-nav-first">
+                    <p>BizAppKit</p>
+                </div>
+            </div>
+            <div class="sub-nav-sec">
+                <p>How Does It Work</p>
+                <p>Apps Integration</p>
+                <p>Pricing</p>
+            </div>
+        </div>
+        <div class="first-containt">
+            <div class="sub-first">
+                <img src="star.png" alt="">
+                <h1>Create endless mobile <br> and web solutions</h1>
+                <p>Set up data the same way as in Excel with <br> unlimited data tables, use a library of widgets
+                    <br> to display data, and use rules to define <br> workflows within your app.
+                </p>
+                <button>i want to try</button> <br><br><br><br>
+            </div>
+            <div class="sub-sec">
+                <img src="site5.png" alt="" width="630" height="500">
+            </div>
+        </div>
+        <div class="second-containt">
+            <div class="second-one">
+                <h2>Go from your idea to a real mobile app in few hours</h2>
+                <p>You can make your app with just a few clicks! You can make it look however you want <br> and let it
+                    work
+                    on phones and computers.</p>
+            </div>
+            <div class="second-two">
+                <div class="sec-emg">
+                    <img src="star.png" alt="" height="100px" width="100px">
+                </div>
+                <h2>270+</h2>
+                <h5>Ready-made widgets and forms</h5>
+                <h6>that you can you use to create your unique application</h6>
+            </div>
+        </div>
+        <div class="third-containt">
+            <img src="Mockup.png" alt="" width="300" height="600">
+        </div>
+        <div class="four-containt">
+            <h2>Why BizAppKit is cool</h2>
+            <div class="sub-four-containt">
+                <div class="four-one">
+                    <div class="one-round"></div>
+
+                    <h3>It’s easy </h3>
+                    <p>BizAppKit is a platform that allows to create mobile and web apps with a visual interface and
+                        drag-and-drop tools without needing to write code. The platform also offers features such as
+                        user management, and integration with third-party services.</p>
+                </div>
+                <div class="four-two">
+                    <div class="two-round"></div>
+                    <h3>It’s cost-effective</h3>
+                    <p>BizAppKit is a platform that allows businesses to create apps without needing to write code. It
+                        is a more cost-effective option than traditional coding-based apps, making it a great choice for
+                        businesses that are on a budget.</p>
+                </div>
+                <div class="four-three">
+                    <div class="three-round"></div>
+                    <h3>It’s quick</h3>
+                    <p>Businesses can benefit from using apps that are easy to create and maintain. These apps can be
+                        quickly developed and updated, making them a great choice for businesses that need to stay
+                        up-to-date with their app offerings.</p>
+                </div>
+            </div>
+        </div>
+        <div class="five-containt">
+            <h2>How it works</h2>
+            <div class="grid1">
+                <div class="sub-five-containt">
+                    <div class="five-one">
+                        <div class="five-one-sub"></div>
+                        <div class="five-one-sub1"> </div>
+                    </div>
+                    <div class="five-two">
+                        <h3>Create interface using our Components</h3>
+                        <p>Use components such as buttons, forms, navigation, and other elements that are available in
+                            the
+                            library. Customize the interface to fit the desired look and feel.</p>
+                    </div>
+                </div>
+                <div class="sub-five-containt2">
+                    <img src="Top Image.png" alt="" width="200" height="150">
+                    <img class="calender" src="Bottom Image.png" alt="" width="200" height="210">
+                </div>
+            </div>
+
+            <div class="grid2">
+                <div class="sub-five-containt3">
+                    <img src="Image.png" alt="">
+                </div>
+                <div class="sub-five-containt4">
+                    <div class="five-one">
+                        <div class="five-one-sub"></div>
+                        <div class="five-one-sub1"> </div>
+                    </div>
+                    <div class="five4-two">
+                        <h3>Use familiar tools to setup data</h3>
+                        <p>Setup data the same way as in Excel with unlimited data tables. Search, sort, filter columns
+                            and rows with ultra ease.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="six-main">
+            <div class="six-containt">
+                <h1>Automate your work</h1>
+                <p>Build automations with you favourite apps : Microsoft Teams Slack, Discord, Whatsapp, Twilio, Email &
+                    SMS.</p>
+                <p class="p1">You can connect apps that you need just in 3 clicks and use it for all your needs to
+                    manage your new application.</p>
+                <button>get start</button>
+
+            </div>
+            <div class="six2-containt">
+                <div>
+                    <img src="twilio logo (7).png" alt="" width="100" height="100">
+                    <p>Slack</p>
+                </div>
+                <div>
+                    <img src="twilio logo.png" alt="" width="100" height="100">
+                    <p>M. Teams</p>
+                </div>
+                <div>
+                    <img src="twilio logo (1).png" alt="" width="100" height="100">
+                    <p>Whatsapp</p>
+                </div>
+                <div>
+                    <img src="twilio logo (2).png" alt="" width="100" height="100">
+                    <p>Discord</p>
+                </div>
+                <div>
+                    <img src="twilio logo (3).png" alt="" width="100" height="100">
+                    <p>Twilio</p>
+                </div>
+                <div>
+                    <img src="twilio logo (4).png" alt="" width="100" height="100">
+                    <p>Amazon s3</p>
+                </div>
+                <div>
+                    <img src="twilio logo (5).png" alt="" width="100" height="100">
+                    <p>Google cloud</p>
+                </div>
+                <div>
+                    <img src="twilio logo (6).png" alt="" width="100" height="100">
+                    <p>Minio</p>
+                </div>
+            </div>
+        </div>
+        <div class="seven-containt">
+            <h1>Select your plan</h1>
+            <div class="seven-sub">
+                <div class="seven-first">
+                    <h2>Trial</h2>
+                    <p>The trial version allows you to test the limited functionality of our service in order to
+                        determine whether it suits you.</p>
+                    <p> <b> $0</b> / month</p>
+                    <button>Get Started</button>
+                </div>
+                <div class="seven-second">
+                    <h3>Most Popular</h3>
+                    <h2>Business</h2>
+                    <p>You will get full access to all the features of our service and will be able to make a
+                        full-fledged application for your business.</p>
+                    <p> <b>$39</b> / month</p>
+                    <button>Get Started</button>
+
+                </div>
+                <div class="seven-third">
+                    <h2>Enterprise</h2>
+                    <p>Get full support with setting up, managing content and publishing your app. Our support team will
+                        interact with you until the last step.</p>
+                    <p> <b>$169 </b>/ month</p>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-one">
+                <div class="nav-first">
+                    <div class="nav-icon">
+                        <i class="fa-solid fa-arrow-pointer"></i>
+                    </div>
+                    <div class="sub-nav-first">
+                        <p>BizAppKit</p>
+                    </div>
+                </div>
+                <div class="footer-p">
+                    <p>© 2023. All right reserved. </p>
+                </div>
+                <div class="footer-img">
+                    <img src="star.png" alt="" height="100px" width="100px">
+                </div>
+                <div class="footer-third">
+                    <p class="mahi">Privacy Policy</p>
+                    <p>Terms of use</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

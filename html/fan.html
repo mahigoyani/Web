@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>this is a fan</h1>
+    <p>Here, a javascript change the value of the src(source) attribute of an emage. </p>
+    <script>
+        function fan(sw) {
+            var pic;
+            if(sw==0){
+                pic='fan-buttons.gif'
+            }
+            else{
+                pic='fan1.gif'
+            }
+            document.getElementById("My emage") .src =pic;
+        }
+    </script>
+    <img id="My emage" src="fan-buttons.gif" width="150" height="200">
+    <p>
+        <button style="color: red; background-color: black;" type="button" onclick="fan(0)">on click</button>
+        <button style="color: red; background-color: black;" type="button" onclick="fan(1)">pull up</button>
+    </p>
+
+    
+</body>
+</html>

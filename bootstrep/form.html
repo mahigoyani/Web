@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    </head>
+    <style>
+        .main{
+            border: 2px solid black;
+            padding: 20px;
+
+
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            margin: 0 auto;
+            width: 35%;
+        }
+        input{
+            width: 200px;
+            margin-left: 30px;
+        }
+        label{
+            font-size: 20px;
+        }
+        .name1{
+            margin-right: 27px;
+        }
+        .m1{
+            width: 20px;
+            margin-left: 43px;
+        }
+        .m2{
+            display: flex;
+        }
+        .sec1{
+            margin-left: 50px;
+        }
+        .check{
+             margin-left: -89px;
+        }
+        .check1{
+             margin-left: -90px; 
+        }
+        .button{
+            margin-left: 130px;
+        }
+        .btn-group{
+            margin-left: 40px;
+        }
+       
+        
+    
+    </style>
+    
+
+<body>
+    <div class="main">
+        <h1>My Form</h1>
+        <div>
+            <label for="#" class="name1">Enter your name:</label>
+            <input type="text" placeholder="enter name">
+        </div><br>
+        <div>
+            <label for="#">Enter your password</label>
+            <input type="password" placeholder="enter password">
+        </div><br>
+        <div>
+            <label for="#" class="name1">Enter your email:</label>
+            <input type="email" placeholder="enter email">
+        </div><br>
+        <div class="m2">
+            <label for="#">Select Gender</label>
+            <div class="btn-group" data-bs-toggle="buttons">
+                <input class="m1" type="radio" id="male" name="male">
+                <label for="male">male</label>
+                <input class="m1" type="radio" id="female" name="male">
+                <label for="female">female</label>
+            </div>
+        </div><br>
+        <div>
+            <label for="course">Select your course</label>
+            <select class="sec1" name="course" id="course">
+                <option value="php">php</option>
+                <option value="bsc">bsc</option>
+                <option value="bca">bca</option>
+            </select>
+        </div><br>
+        <div class="m4">
+            <input class="check" type="checkbox" >
+            <label  class="check1"for="box">Agree terms and conditions</label>
+        </div> <br>
+        <div class="button">
+            <button type="button">Register</button>
+            <button type="button">Reset</button>
+        </div> <br>
+       
+    </div>
+
+</body>
+
+</html>

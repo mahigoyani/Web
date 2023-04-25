@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* first-containt */
+        .first-containt {
+            background-image: url(Mask\ group\ \(1\).png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 800px;
+            margin: 0;
+            font-size: 25px;
+        }
+
+        .first-sub {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.556);
+
+        }
+
+        .first-containt h1 {
+            color: white;
+            padding-bottom: 20px;
+        }
+
+        .first-containt button {
+            color: white;
+            background: #E8883D;
+            border-radius: 8px;
+            padding: 17px 24px;
+        }
+
+        /* second containt */
+        .second-containt {
+            width: 80%;
+            display: flex;
+            padding-top: 50px;
+            margin: 0 auto;
+
+        }
+
+        .second-one {
+            width: 50%;
+
+        }
+
+        .second-two {
+            width: 50%;
+
+        }
+
+        .second-two p {
+            font-size: 20px;
+        }
+
+        .second-two-sub {
+            display: flex;
+            padding-bottom: 20PX;
+            justify-content: center;
+        }
+
+        .second-two-sub H1 {
+            margin-top: 10px;
+        }
+
+        /* third containt */
+        /* third one containt */
+
+        .third-containt {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 50px;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #EEF3F6;
+        }
+
+        .third-one {
+
+            text-align: center;
+            width: 25%;
+            margin: 0px 10px;
+            border: 1px solid #5188A6;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .third-one p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        .third-one h2 {
+            padding-top: 50px;
+
+        }
+
+        .third-img {
+            border-radius: 50%;
+            background-color: white;
+            width: 100px;
+            height: 80px;
+            padding: 15PX 0px;
+            margin: 0 auto;
+        }
+
+        .third-one-sub {
+            display: flex;
+            color: #EAB082;
+            width: 100%;
+            margin-left: 80px;
+        }
+
+        .third-one-sub i {
+            padding: 4px 0px 0px 10px;
+        }
+
+        /* third-two containt */
+        .third-two {
+            width: 25%;
+            text-align: center;
+            margin: 0px 10px;
+            border: 1px solid #5188A6;
+            border-radius: 20px;
+            padding: 20px;
+
+        }
+
+        .third-two p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        .third-two h3 {
+            color: #EAB082;
+        }
+
+        .third-two h2 {
+            padding-top: 50px;
+
+        }
+
+        .third-img2 {
+            border-radius: 50%;
+            background-color: white;
+            width: 100px;
+            height: 80px;
+            padding: 15PX 0px;
+            margin: 0 auto;
+        }
+
+        /* third-third containt */
+        .third-third {
+            width: 25%;
+            text-align: center;
+            margin: 0px 10px;
+            border: 1px solid #5188A6;
+            border-radius: 20px;
+            padding: 20px;
+
+        }
+
+        .third-third p {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        .third-third h3 {
+            color: #EAB082;
+        }
+
+        .third-third h2 {
+            padding-top: 50px;
+
+        }
+
+        .third-img3 {
+            border-radius: 50%;
+            background-color: white;
+            width: 100px;
+            height: 80px;
+            padding: 15PX 0px;
+            margin-left: 80px;
+        }
+
+        /* four containt */
+        .four-containt {
+            width: 100%;
+            padding: 15px 24px;
+            background-color: black;
+        }
+
+        .sub-four-containt {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            color: white;
+            justify-content: space-between;
+        }
+
+        @media only screen and (max-width:600px) {
+            .first-containt {
+                height: 190px;
+                font-size: 12px;
+            }
+
+            .first-containt button {
+                padding: 10px 24px;
+            }
+
+            .second-containt {
+                display: block;
+
+            }
+
+            .second-one {
+                width: 100%;
+            }
+
+            .second-two {
+                width: 100%;
+                margin: 20px 0px;
+                text-align: center;
+            }
+
+            .second-two-sub {
+                font-size: 12px;
+            }
+
+            .second-two-sub img {
+                height: 40px;
+                width: 40px;
+            }
+
+            .main-chem-plant {
+                width: 100%;
+                height: 100%;
+            }
+
+            .third-containt {
+                width: 85%;
+                margin: 0 auto;
+                display: block;
+                padding: 20px 0;
+                height: 1045px;
+            }
+
+            .third-img {
+                border-radius: 50%;
+                background-color: white;
+                width: 47%;
+                margin: 0 auto;
+                height: 80px;
+            }
+
+            .third-one {
+                text-align: center;
+                width: 72%;
+                margin: 0 auto;
+                border: 1px solid #5188A6;
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .third-one-sub {
+                display: flex;
+                color: #EAB082;
+                width: 100%;
+                margin: 0 auto;
+                justify-content: center;
+            }
+
+            .third-two {
+                width: 72%;
+                text-align: center;
+                margin: 15px auto;
+                border: 1px solid #5188A6;
+                border-radius: 20px;
+                padding: 20px;
+            }
+
+            .third-img2 {
+                border-radius: 50%;
+                background-color: white;
+                width: 113px;
+                margin: 0 auto;
+                height: 80px;
+            }
+
+            .third-third {
+                width: 72%;
+                text-align: center;
+                margin: 0px auto;
+                border: 1px solid #5188A6;
+                border-radius: 20px;
+            }
+
+            .third-img3 {
+                border-radius: 50%;
+                background-color: white;
+                width: 100px;
+                height: 80px;
+                margin: 0 auto;
+            }
+
+            .four-containt {
+                width: 100%;
+                padding: 15px 0;
+                background-color: black;
+
+            }
+
+            .sub-four-containt {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                color: white;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (min-width:601px) and (max-width:768px) {
+            .first-containt {
+                height: 390px;
+                font-size: 35px;
+            }
+
+            .first-containt h1 {
+                font-size: 40px;
+            }
+
+            .second-containt {
+                flex-direction: column;
+            }
+
+            .second-one {
+                width: 100%;
+            }
+
+            .second-two {
+                width: 100%;
+                margin: 20px 0;
+            }
+
+            .main-chem-plant {
+                width: 100%;
+                height: 100%;
+            }
+
+            .third-containt {
+                width: 100%;
+            }
+
+            .third-img {
+                width: 110px;
+                margin-left: 43px;
+            }
+
+            .third-one p {
+                font-size: 16px;
+            }
+
+            .third-one-sub {
+                margin-left: 40px;
+            }
+
+            .third-img2 {
+                width: 110px;
+                margin-left: 40px;
+            }
+
+            .third-two p {
+                font-size: 16px;
+            }
+
+            .third-img3 {
+                width: 110px;
+                margin-left: 40px;
+            }
+
+            .third-third p {
+                font-size: 16px;
+            }
+
+            .four-containt {
+                width: 94%;
+            }
+        }
+
+        @media only screen and (min-width:769px) and (max-width:1024px) {
+            .first-containt {
+                height: 520px;
+                font-size: 40px;
+            }
+
+            .first-containt h1 {
+                font-size: 45px;
+            }
+
+            .third-img {
+                width: 110px;
+                margin-left: 46px;
+            }
+
+            .third-one p {
+                font-size: 17px;
+            }
+
+            .third-one-sub {
+                margin-left: 45px;
+            }
+
+            .third-img2 {
+                width: 110px;
+                margin-left: 46px;
+            }
+
+            .third-two p {
+                font-size: 17px;
+            }
+
+            .third-img3 {
+                width: 110px;
+                margin-left: 46px;
+            }
+
+            .third-third p {
+                font-size: 17px;
+            }
+
+            .four-containt {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first-containt">
+        <div class="first-sub">
+            <div>
+                <h1>A Leader in Quality <br> Valve Repair</h1>
+                <button>CONTACT US</button>
+            </div>
+        </div>
+    </div>
+    <div class="second-containt">
+        <div class="second-one">
+            <img src="Chem Plant Pic 20 1.png" alt="" class="main-chem-plant">
+        </div>
+        <div class="second-two">
+            <div class="second-two-sub">
+                <img src="Vector/Icon.png" alt="">
+                <h1>INTRODUCTION</h1>
+                <img src="Vector/Icon.png" alt="">
+            </div>
+            <p>Since its beginning in 1987, Satsuma Valve & Controls has established itself as a leader in quality valve
+                repair and remanufacturing. Satsuma Valve & Controls represents and distributes some of the most
+                reputable, performance proven valve and instrumentation lines in the country. <br> <br>
+                Satsuma Valve & Controls has a complete selection of control valves, relief valves, regulators, and
+                actuators, plus overnight shipment and a sales staff trained to give you prompt professional service.
+                All products remanufactured by Satsuma Valve & Controls have a one year warranty from the date of
+                shipment to be free from defective workmanship and material when used within recommended range.</p>
+        </div>
+    </div>
+    <div class="third-containt">
+        <div class="third-one">
+            <div class="third-img">
+                <img src="Vector/pipe (Traced).png" alt="" width="70" height="70">
+            </div>
+            <h2>Products</h2>
+            <p>Performance-proven valve & <br> instrumentation lines.</p>
+            <div class="third-one-sub">
+                <h3>Learn More</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="third-two">
+            <div class="third-img2">
+                <img src="Vector/settings (Traced).png" alt="" width="70" height="70">
+            </div>
+            <h2>Services</h2>
+            <p>Diagnostics, repair, machining, & much more.</p>
+            <div class="third-one-sub">
+                <h3>Learn More</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+        <div class="third-third">
+            <div class="third-img3">
+                <img src="Vector/worker 1 (Traced).png" alt="" width="70" height="70">
+            </div>
+            <h2>About Us</h2>
+            <p>Unmatched expertise backed by a warranty.</p>
+            <div class="third-one-sub">
+                <h3>Learn More</h3>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="four-containt">
+        <div class="sub-four-containt">
+            <footer> © 2022 Satsuma Valves & Controls</footer>
+            <footer>Privacy Policy Terms & conditions</footer>
+        </div>
+    </div>
+</body>
+
+</html>
